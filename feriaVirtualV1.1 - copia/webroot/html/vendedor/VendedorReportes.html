@@ -1,0 +1,40 @@
+<script src="/js/templates/superior.js"></script>
+<script src="/js/vendedor/reporteVendedor.js"></script>
+
+<div class="vendedor-reportes">
+  <h1 id="TituloHistorialVentas">
+    <strong>Historial de Ventas</strong>
+  </h1>
+
+  <div class="drop-clientes">
+    <label for="TituloCliente">Clientes</label>
+    <select name="dropClientes" id="Clientes">
+      <option value="1">Cliente A</option>
+      <option value="2">Cliente B</option>
+      <option value="3">Cliente C</option>
+    </select>
+  </div>
+
+  <div class="drop-fechainicial1">
+    <label id="fechaInicial1">Fecha Inicial:</label>
+    <input type="date" name="fechaInicial" id="fechaInicial" onchange="rangoFechas()" required />
+  </div>
+
+  <div class="drop-fechafinal1">
+    <label id="fechaFinal1">Fecha Final: </label>
+    <input type="date" name="fechaFinal" id="fechaFinal" onchange="rangoFechas()" required />
+  </div>
+
+  <div class="BotonGenerar1">
+    <input type="submit" value="Generar" />
+  </div>
+
+  <div class="reporte-generado1">
+    <h2 id="reporteVendedor">Reporte</h2>
+    <img id="fotoReporte1" src="/img/Reporte.png" alt="Reporte Foto1" />
+  </div>
+  <div class="BotonDescargar1">
+    <input type="submit" value="Descargar" />
+  </div>
+</div>
+<script src="/js/templates/inferior.js"></script>

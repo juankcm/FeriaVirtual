@@ -1,0 +1,99 @@
+<script src="/js/templates/superior.js"></script>
+
+<script>
+const deleteButtons = document.querySelectorAll('.delete-buttonGPA');
+
+deleteButtons.forEach(button => {
+    button.addEventListener('click', (event) => {
+        const product = event.target.closest('.product');
+        product.remove();
+    });
+});
+</script>
+
+<link rel="stylesheet" href="/css/estilo.css">
+
+<h1 id="gestionProductosTitulo">Gestion de Productos</h1>
+
+<div class="contenedorCategorias">
+    <div class="grupo">
+        <label for="TituloCategorias">Categoria</label>
+            <select name="Categorias" id="Categorias">
+                <option value="" disabled selected>Selecciona una categoría</option>
+                <option value="1">Frutas</option>
+                <option value="2">Verduras</option>
+                <option value="3">Mariscos</option>
+                <option value="4">Carnes</option>
+                <option value="3">Pollo</option>
+                <option value="3">Hierbas y Suplementos</option>
+            </select>
+    </div>
+    <div class="grupo">
+        <label for="TituloTramo">Tramo</label>
+            <select name="Tramo" id="Tramo">
+                <option value="" disabled selected>Selecciona una categoría</option>
+                <option value="1">Vendedor 1</option>
+                <option value="2">Vendedor 2</option>
+                <option value="3">Vendedor 3</option>
+            </select>
+    </div>
+</div>
+
+<div>
+    <div class="containerGPA">
+        <div class="product-listGPA">
+            <div class="productGPA">
+                <img src="/img/aguacate.png" alt="Producto 1">
+                <div class="product-details">
+                    <h2>Aguacate</h2>
+                    <p>Vendedor: Vendedor 1</p>
+                    <p>Precio: 200 CRC</p>
+                </div>
+                <button class="delete-buttonGPA">Eliminar</button>
+            </div>
+
+            <div class="productGPA">
+                <img src="/img/papaya.png" alt="Producto 2">
+                <div class="product-details">
+                    <h2>Papaya</h2>
+                    <p>Vendedor: Vendedor 1</p>
+                    <p>Precio: 150 CRC</p>
+                </div>
+                <button class="delete-buttonGPA">Eliminar</button>
+            </div>
+
+            <div class="productGPA">
+                <img src="/img/verduras.png" alt="Producto 2">
+                <div class="product-details">
+                    <h2>Verduras Varias</h2>
+                    <p>Vendedor: Vendedor 1</p>
+                    <p>Precio: 15.000 CRC</p>
+                </div>
+                <button class="delete-buttonGPA">Eliminar</button>
+            </div>
+
+            <div class="productGPA">
+                <img src="/img/carne.png" alt="Producto 2">
+                <div class="product-details">
+                    <h2>Carne</h2>
+                    <p>Vendedor: Vendedor 1</p>
+                    <p>Precio: 4.500 CRC</p>
+                </div>
+                <button class="delete-buttonGPA">Eliminar</button>
+            </div>
+
+            <div class="productGPA">
+                <img src="/img/pescado.png" alt="Producto 2">
+                <div class="product-details">
+                    <h2>Pescado</h2>
+                    <p>Vendedor: Vendedor 1</p>
+                    <p>Precio: 2.500 CRC</p>
+                </div>
+                <button class="delete-buttonGPA">Eliminar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="/js/templates/inferior.js"></script>

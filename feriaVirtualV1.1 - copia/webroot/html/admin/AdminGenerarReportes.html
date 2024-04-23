@@ -1,0 +1,53 @@
+<script src="/js/templates/superior.js"></script>
+
+<script src="/js/admin/generarReporteAdmin.js"></script>
+
+<div class="administrador-reportes">
+  <h1 id="TituloReporteAdmin">
+    <strong>Generar Reporte</strong>
+  </h1>
+
+  <div class="admin-drop-categorias">
+    <label for="TituloAdminCategorias">Categorias</label>
+    <select name="admindropCategorias" id="Categorias">
+      <option value="1">Frutas</option>
+      <option value="2">Vegetales</option>
+      <option value="3">Carnes</option>
+      <option value="3">Mariscos</option>
+    </select>
+  </div>
+
+  <div class="admin-drop-tramo">
+    <label for="TituloAdminTramo">Tramo</label>
+    <select name="admindropTramo" id="Tramo">
+      <option value="1">Vendedor A</option>
+      <option value="2">Vendedor B</option>
+      <option value="3">Vendedor C</option>
+    </select>
+  </div>
+
+  <div class="drop-fechainicial2">
+    <label id="fechaInicial2">Fecha Inicial:</label>
+    <input type="date" name="fechaInicial" id="fechaInicial" required onchange="rangoFechas()" />
+  </div>
+
+  <div class="drop-fechafinal2">
+    <label id="fechaFinal2">Fecha Final: </label>
+    <input type="date" name="fechaFinal" id="fechaFinal" required onchange="rangoFechas()"/>
+  </div>
+
+  <div class="BotonGenerar2">
+    <input type="submit" value="Generar" />
+  </div>
+
+  <div class="reporte-generado2">
+    <h2 id="reporteAdmin">Reporte</h2>
+    <img id="fotoReporte2" src="/img/Reporte.png" alt="Reporte Foto2"/>
+  </div>
+
+  <div class="BotonDescargar2">
+    <input type="submit" value="Descargar" />
+  </div>
+ 
+</div>
+ <script src="/js/templates/inferior.js"></script>

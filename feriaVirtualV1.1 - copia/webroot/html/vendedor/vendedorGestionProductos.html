@@ -1,0 +1,128 @@
+<script src="/js/templates/superior.js"></script>
+<div class="agregar-productosvendedor">
+  <div class="gestor-productosvendedor">
+    <h1 id="TituloAgregarProductoVendedor">
+      <strong>Agregar Producto</strong>
+    </h1>
+    <img
+      id="fotoProductoVendedorAgregar"
+      src="/img/fotoagregarProducto.png"
+      alt="Foto Producto Vendedor"
+    />
+
+    <div class="datos-agregarproductovendedor">
+      <input
+        type="text"
+        name="NombreProducto"
+        required
+        placeholder="Nombre de Producto"
+      />
+      <input type="text" name="Categoria" required placeholder="Categoria" />
+      <input type="text" name="Precio" required placeholder="Precio" />
+      <input
+        type="number"
+        name="Inventario"
+        required
+        placeholder="Inventario"
+      />
+      <input
+        type="file"
+        name="Fotografia"
+        accept="image/jpeg"
+        placeholder="Fotografía (Opcional)"
+      />
+    </div>
+    <div class="BotonAgregarProductoVendedor">
+      <input type="submit" value="Agregar" />
+    </div>
+  </div>
+</div>
+
+<div class="inventario-productosvendedor">
+  <h3 id="TituloProductosVendedor">
+    <strong>Productos </strong>
+  </h3>
+  <div class="lista-productosvendedor">
+    <!-- Producto 1 -->
+    <img
+      id="fotoListaProducto1Vendedor"
+      src="/img/aguacate.png"
+      alt="Foto Aguacate Vendedor"
+    />
+    <h4 id="nombreProductoVendedor1"><strong>Aguacate</strong></h4>
+
+    <label class="productosvendedor-checkbox1">
+      <input type="checkbox" />
+      <span class="checkmark"></span>
+      <!-- Este span se utilizará para el estilo del checkbox -->
+    </label>
+    <p1 id="detallesprecio-vendedorproducto1"> 500gr ₡2.250</p1>
+
+    <!-- Producto 2 -->
+    <img
+      id="fotoListaProducto2Vendedor"
+      src="/img/pescado.png"
+      alt="Foto Pescado Vendedor"
+    />
+    <h5 id="nombreProductoVendedor2"><strong>Pescado</strong></h5>
+
+    <label class="productosvendedor-checkbox2">
+      <input type="checkbox" />
+      <span class="checkmark"></span>
+      <!-- Este span se utilizará para el estilo del checkbox -->
+    </label>
+    <p2 id="detallesprecio-vendedorproducto2"> 1000gr ₡8.250</p2>
+
+    <!-- Producto 3 -->
+    <img
+      id="fotoListaProducto3Vendedor"
+      src="/img/carne.png"
+      alt="Foto Carne Vendedor"
+    />
+    <h6 id="nombreProductoVendedor3"><strong>Carne</strong></h6>
+
+    <label class="productosvendedor-checkbox3">
+      <input type="checkbox" />
+      <span class="checkmark"></span>
+      <!-- Este span se utilizará para el estilo del checkbox -->
+    </label>
+    <p3 id="detallesprecio-vendedorproducto3"> 1000gr ₡6.663</p3>
+
+    <!-- Producto 4 -->
+    <img
+      id="fotoListaProducto4Vendedor"
+      src="/img/manzana.png"
+      alt="Foto Manzana Vendedor"
+    />
+    <h7 id="nombreProductoVendedor4"><strong>Manzana</strong></h7>
+
+    <label class="productosvendedor-checkbox4">
+      <input type="checkbox" />
+      <span class="checkmark"></span>
+      <!-- Este span se utilizará para el estilo del checkbox -->
+    </label>
+    <p4 id="detallesprecio-vendedorproducto4"> 1000gr ₡3.250</p4>
+
+    <!-- Producto 5 -->
+
+    <img
+      id="fotoListaProducto5Vendedor"
+      src="/img/atun.png"
+      alt="Foto Atun Vendedor"
+    />
+    <h8 id="nombreProductoVendedor5"><strong>Atún Bumble Bee </strong></h8>
+
+    <label class="productosvendedor-checkbox5">
+      <input type="checkbox" />
+      <span class="checkmark"></span>
+      <!-- Este span se utilizará para el estilo del checkbox -->
+    </label>
+    <p5 id="detallesprecio-vendedorproducto5"> 140gr ₡6.663</p5>
+  </div>
+
+  <div class="BotonEliminarProductoVendedor">
+    <input type="submit" value="Eliminar" />
+  </div>
+</div>
+
+<script src="/js/templates/inferior.js"></script>

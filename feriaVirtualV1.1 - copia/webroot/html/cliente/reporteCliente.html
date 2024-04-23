@@ -1,0 +1,20 @@
+<script src="/js/templates/superior.js"></script>
+<script src="/js/cliente/reporteCliente.js"></script>
+
+<div class="reporteComprador">
+    <h2>REPORTES DE COMPRA</h2>
+    <img id="imgGrafico" src="/img/clienteReporte.png" alt="Grafico">
+    <section>
+        <div class="filtrosReporteComprador">
+            <label for="FechaInicial">Fecha Inicial: <input type="date" class="FechaInicialC" onchange="rangoFechas()" ></label><br>
+            <label for="FechaFinal">Fecha Final: <input type="date" class="FechaFinalC" onchange="rangoFechas()" ></label>
+            <input type="submit" value="Aceptar"><br>
+        </div>
+
+        <img id="ImgReporteComprado" src="/img/ReporteComprador.png" alt="ReporteComprador"><br>
+        <input id="BtnDescargarReporteC" type="submit" value="Descargar Reporte"  >
+    </section>
+   
+</div>
+
+<script src="/js/templates/inferior.js"></script>
